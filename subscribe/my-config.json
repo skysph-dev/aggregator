@@ -1,0 +1,134 @@
+{
+  "sites": [],
+  "groups": {
+    "free": {
+      "emoji": true,
+      "list_only": true,
+      "targets": {
+        "clash": "free-clash",
+        "v2ray": "free-v2ray",
+        "singbox": "free-singbox"
+      }
+    }
+  },
+  "storage": {
+    "engine": "gist",
+    "token": "",
+    "items": {
+      "free-clash": {
+        "username": "skysph-dev",
+        "gist_id": "5b55986287442543485b30468db3eb65",
+        "filename": "clash.yaml"
+      },
+      "free-v2ray": {
+        "username": "skysph-dev",
+        "gist_id": "5b55986287442543485b30468db3eb65",
+        "filename": "v2ray.txt"
+      },
+      "free-singbox": {
+        "username": "skysph-dev",
+        "gist_id": "5b55986287442543485b30468db3eb65",
+        "filename": "singbox.json"
+      }
+    }
+  },
+  "delay": 5000,
+  "crawl": {
+    "enable": true,
+    "max_fails": 5,
+    "include_nodes": true,
+    "persist": {
+      "subscribe": "",
+      "nodes": ""
+    },
+    "google": {
+      "enable": true,
+      "push_to": [
+        "free"
+      ],
+      "limit": 100,
+      "days": 7,
+      "exclude_sites": []
+    },
+    "yandex": {
+      "enable": true,
+      "push_to": [
+        "free"
+      ],
+      "days": 2,
+      "pages": 5,
+      "exclude_sites": []
+    },
+    "github": {
+      "enable": false,
+      "pages": 1,
+      "push_to": [
+        "free"
+      ],
+      "exclude": "",
+      "exclude_repos": []
+    },
+    "telegram": {
+      "enable": false,
+      "pages": 1,
+      "exclude": "",
+      "channels": {}
+    },
+    "twitter": {
+      "enable": false,
+      "users": {}
+    },
+    "repositories": [
+      {
+        "enable": true,
+        "username": "free-nodes",
+        "repo": "v2rayfree",
+        "commits": 3,
+        "push_to": [
+          "free"
+        ],
+        "exclude": ""
+      },
+      {
+        "enable": true,
+        "username": "Pawdroid",
+        "repo": "Free-servers",
+        "commits": 3,
+        "push_to": [
+          "free"
+        ],
+        "exclude": ""
+      },
+      {
+        "enable": true,
+        "username": "Au1rxx",
+        "repo": "free-vpn-subscriptions",
+        "commits": 3,
+        "push_to": [
+          "free"
+        ],
+        "exclude": ""
+      },
+      {
+        "enable": true,
+        "username": "rtwo2",
+        "repo": "FastNodes",
+        "commits": 3,
+        "push_to": [
+          "free"
+        ],
+        "exclude": ""
+      },
+      {
+        "enable": true,
+        "username": "chengaopan",
+        "repo": "AutoMergePublicNodes",
+        "commits": 3,
+        "push_to": [
+          "free"
+        ],
+        "exclude": ""
+      }
+    ]
+  }
+}
