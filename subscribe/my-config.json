@@ -32,7 +32,7 @@
       }
     }
   },
-  "delay": 5000,
+  "delay": 2000,
   "crawl": {
     "enable": true,
     "max_fails": 5,
@@ -83,7 +83,7 @@
         "enable": true,
         "username": "free-nodes",
         "repo": "v2rayfree",
-        "commits": 3,
+        "commits": 5,
         "push_to": [
           "free"
         ],
@@ -93,7 +93,7 @@
         "enable": true,
         "username": "Pawdroid",
         "repo": "Free-servers",
-        "commits": 3,
+        "commits": 5,
         "push_to": [
           "free"
         ],
@@ -103,7 +103,7 @@
         "enable": true,
         "username": "Au1rxx",
         "repo": "free-vpn-subscriptions",
-        "commits": 3,
+        "commits": 5,
         "push_to": [
           "free"
         ],
@@ -113,7 +113,7 @@
         "enable": true,
         "username": "rtwo2",
         "repo": "FastNodes",
-        "commits": 3,
+        "commits": 5,
         "push_to": [
           "free"
         ],
@@ -123,11 +123,47 @@
         "enable": true,
         "username": "chengaopan",
         "repo": "AutoMergePublicNodes",
-        "commits": 3,
+        "commits": 5,
         "push_to": [
           "free"
         ],
         "exclude": ""
+      },
+      {
+        "username": "share-daily",
+        "repo": "node",
+        "commits": 5,
+        "push_to": [
+          "free"
+        ],
+        "enable": true
+      },
+      {
+        "username": "v2raydog-node",
+        "repo": "free-nodes",
+        "commits": 5,
+        "push_to": [
+          "free"
+        ],
+        "enable": true
+      },
+      {
+        "username": "v2raynnodes",
+        "repo": "v2rayfree",
+        "commits": 5,
+        "push_to": [
+          "free"
+        ],
+        "enable": true
+      },
+      {
+        "username": "TelegaVPN",
+        "repo": "free-vpn-keys",
+        "commits": 5,
+        "push_to": [
+          "free"
+        ],
+        "enable": true
       }
     ],
     "task": {
