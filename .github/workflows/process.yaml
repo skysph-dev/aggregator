@@ -1,8 +1,7 @@
 name: Process
 on:
   schedule:
-    - cron: "05 03 * * *"
-    - cron: "05 11 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 env:
@@ -48,7 +47,7 @@ jobs:
         run: pip3 install -r requirements.txt
 
       - name: Process
-        run: python -u subscribe/process.py --overwrite
+        run: python -u subscribe/process.py -s subscribe/my-config.json --overwrite
 
       - name: Timestamp
         run: date
