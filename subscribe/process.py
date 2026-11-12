@@ -307,11 +307,14 @@ def aggregate(args: argparse.Namespace) -> None:
                         continue
 
                 # save to remote server
-                persisted = pushtool.push_to(
-                    content=content,
-                    item=process_config.storage.items.get(storage_name, StorageItem()),
-                    group=f"{k}::{target}",
-                )
+                if not content or not content.strip():
+                    logger.error(f"skip push because content is empty, group: {k}, target: {target}")
+                else:
+                    persisted = pushtool.push_to(
+                        content=content,
+                        item=process_config.storage.items.get(storage_name, StorageItem()),
+                        group=f"{k}::{target}",
+                    )
 
             # clean workspace
             workflow.cleanup(os.path.join(PATH, "subconverter"), [dest_file, "generate.ini"])
